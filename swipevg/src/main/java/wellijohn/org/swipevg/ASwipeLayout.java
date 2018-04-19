@@ -22,7 +22,7 @@ import wellijohn.org.swipevg.inter.OnSwipeStateChangeListener;
  * @email: wellijohn1991@gmail.com
  * @desc: 用来做侧滑使用
  */
-public class SwipeLayout extends LinearLayout {
+public class ASwipeLayout extends LinearLayout {
 
     private static final int DURATION = 200;
     private OverScroller mScroller;
@@ -53,15 +53,15 @@ public class SwipeLayout extends LinearLayout {
     private int mLastMotionX;
 
 
-    public SwipeLayout(Context context) {
+    public ASwipeLayout(Context context) {
         super(context);
     }
 
-    public SwipeLayout(Context context, @Nullable AttributeSet attrs) {
+    public ASwipeLayout(Context context, @Nullable AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public SwipeLayout(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public ASwipeLayout(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         mScroller = new OverScroller(getContext(), new FastOutLinearInInterpolator());
         final ViewConfiguration configuration = ViewConfiguration.get(context);

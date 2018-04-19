@@ -13,7 +13,7 @@ import java.util.List;
 
 import wellijohn.org.scrolldelrecyclerview.Person;
 import wellijohn.org.scrolldelrecyclerview.R;
-import wellijohn.org.swipevg.SwipeLayout;
+import wellijohn.org.swipevg.ASwipeLayout;
 import wellijohn.org.swipevg.inter.OnSwipeStateChangeListener;
 
 
@@ -101,7 +101,7 @@ public class RVSwipeAdapter extends RecyclerView.Adapter<RVSwipeAdapter.ViewHold
 
         TextView tvMenu;
         TextView tvMenuDelete;
-        SwipeLayout scrollDelLl;
+        ASwipeLayout scrollDelLl;
         LinearLayout llContent;
         TextView tvName;
         TextView tvAdviseNameList;
