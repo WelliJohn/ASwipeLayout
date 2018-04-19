@@ -25,5 +25,5 @@ dependencies {
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     implementation 'com.android.support:recyclerview-v7:27.1.1'
 //    implementation project(':swipevg')
-    implementation 'com.github.WelliJohn:ASwipeLayout:0.0.1'
+    implementation 'com.github.WelliJohn:ASwipeLayout:0.0.2'
 }
