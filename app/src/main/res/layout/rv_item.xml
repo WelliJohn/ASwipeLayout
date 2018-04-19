@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wellijohn.org.swipevg.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll_del_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/margin_15">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/margin_13"
+                android:paddingTop="@dimen/margin_13">
+
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="刘宪忠"
+                    android:textColor="@color/text_333333"
+                    android:textSize="@dimen/text_14" />
+
+
+                <TextView
+                    android:id="@+id/tv_advise_name_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:singleLine="true"
+                    android:text="侧滑删除"
+                    android:textColor="@color/text_999999"
+                    android:textSize="@dimen/text_12"
+                    app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_13"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:singleLine="true"
+                    android:text="全面支持RecyclerView"
+                    android:textColor="@color/text_999999"
+                    android:textSize="@dimen/text_12"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_advise_name_list" />
+
+
+                <ImageView
+                    android:id="@+id/iv"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="@dimen/margin_15"
+                    android:layout_marginRight="@dimen/margin_15"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_launcher_background"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </android.support.constraint.ConstraintLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/right_menu_content"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end">
+
+        <TextView
+            android:id="@+id/tv_menu"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@color/app_red"
+            android:gravity="center"
+            android:text="删除"
+            android:textSize="@dimen/text_15" />
+
+        <TextView
+            android:id="@+id/tv_menu_2"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@color/app_blue"
+            android:gravity="center"
+            android:text="添加"
+            android:textSize="@dimen/text_15" />
+
+    </LinearLayout>
+
+
+</wellijohn.org.swipevg.SwipeLayout>
