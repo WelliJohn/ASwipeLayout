@@ -3,9 +3,9 @@ Android侧滑菜单库
 
 ## Android中侧滑的场景有很大，大部分是基于RecyclerView，但是有些时候你可以动态地addView到一个布局当中，也希望他实现侧滑，所以就产生了ASwipeLayout，他不仅支持在RecyclerView中实现侧滑只要你包裹了这层布局，基本都能实现侧滑。
 ## 1.效果图
-![](https://user-gold-cdn.xitu.io/2018/4/19/162dd919e10bdbc8?w=283&h=500&f=gif&s=3920116)
+![single](https://github.com/WelliJohn/ASwipeLayout/blob/master/images/single_row.gif?raw=true)
 
-![双列](https://user-gold-cdn.xitu.io/2018/4/19/162dd9209cfade40?w=283&h=500&f=gif&s=2072113)
+![single](https://github.com/WelliJohn/ASwipeLayout/blob/master/images/two_rows.gif?raw=true)
 ## 2.使用方式其实挺简单的，在设计的时候，就是想着怎么简单怎么来。
 引入库：
 ```
