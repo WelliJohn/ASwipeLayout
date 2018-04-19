@@ -22,7 +22,7 @@ Step 2. Add the dependency
 	        compile 'com.github.WelliJohn:ASwipeLayout:0.0.2'
 	}
 ```
-在需要测试的地方的xml布局中添加：
+在需要侧滑的布局的根布局中添加下面这段代码，注意注释的地方才是可以定制的：
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <wellijohn.org.swipevg.ASwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -54,7 +54,7 @@ Step 2. Add the dependency
 </wellijohn.org.swipevg.SwipeLayout>
 
 ```
-注意在这里ll_content，right_menu_content是一定要的，这个id对应的布局不要自己去改变，以后有需要会放开，目前的话，一般的情况你们只需要定制主item的内容和右侧菜单栏了，在这里我也省去了定义一些额外的自定义view了，单纯就是用id，来区分主item和右侧的菜单。
+注意在这里ll_content，right_menu_content是一定要的，这个id对应的布局不要自己去改变，以后有需要会放开，一般的情况只需要定制主item的内容和右侧菜单栏了，在这里我也省去了定义一些额外的自定义view了，单纯就是用id，来区分主item和右侧的菜单。
 ## 3.我们知道在RecyclerView中ViewHolder是有复用的情况，这样会使得当我们滑出某个menu的时候，再进行RecyclerView的上下滑动时，会使得其他的Item也滑出了menu，这就是item复用导致了数据错乱，所以针对这类型的问题的话，我在这里已经提供了OnSwipeStateChangeListener接口，在这里你们可以记录下滑动的状态，在onBindViewHolder方法里面，根据状态来设定Item是打开menu还是关闭menu：
 ```
  @Override
