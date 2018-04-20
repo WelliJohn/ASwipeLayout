@@ -59,7 +59,8 @@ Step 2. Add the dependency
 
 ```
 注意在这里ll_content，right_menu_content是一定要的，这个id对应的布局不要自己去改变，以后有需要会放开，一般的情况只需要定制主item的内容和右侧菜单栏了，在这里我也省去了定义一些额外的自定义view了，单纯就是用id，来区分主item和右侧的菜单。
-## 3.我们知道在RecyclerView中ViewHolder是有复用的情况，这样会使得当我们滑出某个menu的时候，再进行RecyclerView的上下滑动时，会使得其他的Item也滑出了menu，这就是item复用导致了数据错乱，所以针对这类型的问题的话，我在这里已经提供了OnSwipeStateChangeListener接口，在这里你们可以记录下滑动的状态，在onBindViewHolder方法里面，根据状态来设定Item是打开menu还是关闭menu：
+## 3.因为RecyclerView中有复用Item的情况，针对这种情况的解决方案
+因为item复用会使得当我们滑出某个menu的时候，再进行RecyclerView的上下滑动时，会使得其他的Item也滑出了menu，这就是item复用导致了布局错乱，所以针对这类型的问题的话，我在这里已经提供了OnSwipeStateChangeListener接口，在这里你们可以记录下滑动的状态，在onBindViewHolder方法里面，根据状态来设定Item是打开menu还是关闭menu：
 ```
  @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
