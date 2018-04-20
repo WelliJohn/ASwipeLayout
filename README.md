@@ -19,7 +19,7 @@ Step 1. Add it in your root build.gradle at the end of repositories:
 Step 2. Add the dependency
 
 	dependencies {
-	        compile 'com.github.WelliJohn:ASwipeLayout:0.0.2'
+	        implementation 'com.github.WelliJohn:ASwipeLayout:0.0.2'
 	}
 ```
 在需要侧滑的布局的根布局中添加下面这段代码，注意注释的地方才是可以定制的：
