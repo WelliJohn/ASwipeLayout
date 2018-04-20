@@ -1,8 +1,11 @@
 # ASwipeLayout
 Android侧滑菜单库
-
-## Android中侧滑的场景有很多，大部分是基于RecyclerView，但是有些时候你可以动态地addView到一个布局当中，也希望他实现侧滑，所以就产生了ASwipeLayout，他不仅支持在RecyclerView中实现侧滑
-## 实际上只要你包裹了这层布局，都能实现侧滑
+## 前言
+该控件的优点：
+- 1.无论是在RecyclerView，ListView，还是LinearLayout等，只要是ViewGroup用该控件都能实现侧滑。
+- 2.控件的手势滑动冲突已解决，不会出现嵌套到ScrollView等控件出现滑动不流畅的情况
+- 3.控件使用简单，只需要在xml外套一层该控件就好了，秒接入
+- 4.点击事件很方便，原来什么写法就什么写法
 ## 1.效果图
 ![single](https://github.com/WelliJohn/ASwipeLayout/blob/master/images/single_row.gif?raw=true)
 
