@@ -78,6 +78,3 @@ Step 2. Add the dependency
     }
 ```
 如上代码就可以解决Item复用导致布局错乱的问题了（粑粑再也不用担心RecyclerView复用的问题了）。
-## 4.目前的项目当中，只是支持了右侧菜单的实现，因为左侧的需求我现在见到不是很多，当然如果有需求的话，可以加下面的群，提你们的需求或者遇到的问题，我在有时间的情况会进行添加或者修改：
-![](https://user-gold-cdn.xitu.io/2018/4/19/162dd9e2b739e06e?w=226&h=290&f=png&s=16623)
-## 5.代码已上传github，[ASwipeLayout](https://github.com/WelliJohn/ASwipeLayout)
