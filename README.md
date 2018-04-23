@@ -1,5 +1,7 @@
 # ASwipeLayout
 Android侧滑菜单库
+## APK下载地址
+![ASwipeLayout](https://github.com/WelliJohn/ASwipeLayout/blob/master/images/QRCode_336.png?raw=true)
 ## 前言
 该控件的优点：
 - 1.无论是在RecyclerView，ListView，还是LinearLayout等，只要是ViewGroup用该控件都能实现侧滑。
